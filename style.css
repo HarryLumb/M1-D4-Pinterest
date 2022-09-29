@@ -1,0 +1,135 @@
+body{
+    margin:0;
+    font-family: sans-serif;
+}
+
+#pinterest-card{
+    width:300px;    
+    height:350px;
+    margin-left: auto;
+    margin-right:auto;
+    position: relative;
+    overflow:hidden;
+    top:25vh;
+    border-radius:20px;
+    overflow: hidden;
+    transition: box-shadow 0.5s ease-in-out;    
+}
+
+#pinterest-card img{
+    width:100%;
+    height:100%;
+    object-fit: cover;
+}
+
+#save{
+    position: absolute;
+    height:50px;
+    width:100px;
+    background-color:#fa0501e8;
+    top:-90px;
+    left:180px;
+    text-align:center;
+    color:rgba(255, 255, 255, 0.877);
+    font-weight: bolder;
+    font-size:1.2em;
+    border-radius: 30px;
+    line-height: 50px;
+    padding-right: 0;
+    user-select: none;
+    transition:transform 1s, opacity 0.5s; 
+    bottom: 0px; 
+    opacity: 0%;
+    padding: 0;
+}
+
+#location{
+    position: absolute;
+    bottom:10px;
+    left:10px;
+    background-color: rgba(255, 255, 255, 0.879);
+    padding: 10px;
+    border-radius: 20px;
+    font-weight: bold;
+    user-select: none;
+    
+    transition: transform 1s, opacity 0.5s;     
+}
+
+
+
+#download{
+    position: absolute;
+    bottom: 10px;
+    left:190px;
+    background-color:  rgba(255, 255, 255, 0.879);
+    padding: 10px;
+    padding-left: 12px;
+    padding-right: 12px;
+    border-radius: 20px;
+    font-weight: bold;
+    user-select: none;
+    transition:transform 1s, opacity 0.5s    
+}
+
+#icon{
+    font-size: 18px;
+    font-weight: bolder;
+}
+
+#dots{
+    position: absolute;
+    bottom: 10px;
+    left:250px;
+    background-color: rgba(255, 255, 255, 0.899);
+    padding: 10px;
+    padding-left: 12px;
+    padding-top: 1px;
+    padding-right: 12px;
+    border-radius: 20px;
+    font-weight: bolder;
+    font-size: 20px;
+    text-align: center;
+    line-height: 30px;
+    user-select: none;
+    transition:transform 1s, opacity 0.5s
+}
+
+#pinterest-card:hover #save {
+    transform: translateY(100px);
+    opacity: 100;
+}
+#pinterest-card:hover #location{
+    transform: translateY(-100px);
+    opacity: 100;
+}
+
+#pinterest-card:hover #dots{
+     transform: translateY(-100px);
+    opacity: 100;
+}
+#pinterest-card:hover  #download{
+    transform: translateY(-100px);
+    opacity:100;
+}
+
+#pinterest-card:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);   
+}
+    
+#bottom{
+    position:relative;
+    width:300px;    
+    height:100px;
+    margin-left: auto;
+    margin-right:auto;
+}
+
+#save-container{
+    position:relative;
+    width:300px;    
+    height:100px;
+    margin-left: auto;
+    margin-right:auto;
+    text-align: center;
+}
